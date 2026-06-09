@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 
+    ============================================
+    TÍTULO DE LA PÁGINA
+    Modificá el texto entre <title> y </title>
+    ============================================
+  -->
+  <title>Paula Gigena — Artista Visual</title>
+  <meta name="description" content="Paula Gigena — Ser Paula. Artista visual. Fotobordado, archivo familiar, memoria, fotografía intervenida." />
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVEGACIÓN PRINCIPAL
+       Para cambiar los ítems del menú, editá los textos
+       dentro de los <a href="#seccion">
+       ============================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <a href="#inicio">PG</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#inicio" class="nav__link">inicio</a></li>
+      <li><a href="#sobre-mi" class="nav__link">sobre mí</a></li>
+      <li><a href="#obras" class="nav__link">obras</a></li>
+      <li><a href="#proyectos" class="nav__link">proyectos</a></li>
+      <li><a href="#textos" class="nav__link">textos</a></li>
+      <li><a href="#cv" class="nav__link">cv</a></li>
+      <li><a href="#contacto" class="nav__link">contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================
+       PORTADA / HERO
+       La imagen de fondo se configura en style.css
+       buscando ".hero__image"
+       ============================================ -->
+  <section class="hero hero--crema" id="inicio">
+    <!-- Sin imagen — fondo crema liso -->
+
+    <!-- Peonías decorativas en la portada — más visibles sobre fondo claro -->
+    <div class="peonias" aria-hidden="true">
+      <!-- Peonía grande — esquina superior derecha -->
+      <svg class="peonia-anim-1" style="position:absolute;right:-20px;top:-10px;opacity:0.18;width:380px;height:380px;" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 160 C80 145 55 138 45 120 C35 102 42 80 55 68 C62 62 72 60 80 63 C75 55 76 44 83 38 C91 31 103 33 110 40 C115 32 125 28 135 32 C145 36 149 48 145 58 C155 55 166 60 169 71 C172 82 165 93 156 97 C163 108 161 123 153 131 C144 140 130 140 120 135 C115 148 108 160 100 160Z" fill="#D4006A"/>
+        <path d="M100 40 L100 165" stroke="#2D5A4F" stroke-width="1.5" opacity="0.6"/>
+        <path d="M100 165 C100 175 97 185 95 195" stroke="#2D5A4F" stroke-width="1.5" opacity="0.6"/>
+        <path d="M100 130 C92 125 82 128 76 135" stroke="#2D5A4F" stroke-width="1" fill="none" opacity="0.5"/>
+        <path d="M100 118 C108 113 118 116 124 123" stroke="#2D5A4F" stroke-width="1" fill="none" opacity="0.5"/>
+      </svg>
+
+      <!-- Peonía mediana — esquina inferior izquierda -->
+      <svg class="peonia-anim-3" style="position:absolute;left:-10px;bottom:5%;opacity:0.14;width:260px;height:260px;" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#2D5A4F"/>
+        <path d="M100 40 L100 160" stroke="#2D5A4F" stroke-width="1.5" opacity="0.6"/>
+      </svg>
+
+      <!-- Peonía pequeña — lado derecho medio -->
+      <svg class="peonia-anim-2" style="position:absolute;right:12%;top:30%;opacity:0.1;width:200px;height:200px;" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 158 C81 144 57 137 47 119 C37 101 44 79 57 67 C64 61 74 59 81 62 C76 55 77 43 84 37 C92 30 104 32 110 39 C116 31 125 27 135 31 C145 35 148 47 144 57 C153 54 163 59 166 70 C169 81 162 92 153 96 C160 107 158 121 150 129 C141 138 127 138 117 133 C112 146 105 158 100 158Z" fill="#B8922A"/>
+        <path d="M100 40 L100 162" stroke="#B8922A" stroke-width="1.5" opacity="0.5"/>
+      </svg>
+
+      <!-- Peonía extra — esquina superior izquierda, muy sutil -->
+      <svg class="peonia-anim-4" style="position:absolute;left:5%;top:-30px;opacity:0.08;width:220px;height:220px;" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#D4006A"/>
+        <path d="M100 40 L100 158" stroke="#2D5A4F" stroke-width="1.5" opacity="0.5"/>
+      </svg>
+    </div>
+
+    <div class="hero__content">
+      <img src="images/logo-ser-paula.png" alt="Ser Paula" class="hero__logo" />
+      <h1 class="hero__nombre" id="heroNombre"></h1>
+      <p class="hero__titulo">Artista visual</p>
+      <p class="hero__tags">
+        Memoria&thinsp;·&thinsp;Archivo&thinsp;·&thinsp;Fotobordado&thinsp;·&thinsp;Fotografía intervenida
+      </p>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SOBRE MÍ
+       Editá el texto de la biografía entre las etiquetas <p>
+       Reemplazá images/retrato.jpg con tu fotografía personal
+       ============================================ -->
+  <section class="section" id="sobre-mi" style="position:relative; overflow:hidden;">
+    <!-- Peonía decorativa de fondo — sutil -->
+    <div aria-hidden="true" style="position:absolute;right:-40px;bottom:-20px;opacity:0.06;pointer-events:none;z-index:0;">
+      <svg class="peonia-anim-2" width="380" height="420" viewBox="0 0 200 240" fill="none">
+        <path d="M100 158 C81 144 57 137 47 119 C37 101 44 79 57 67 C64 61 74 59 81 62 C76 55 77 43 84 37 C92 30 104 32 110 39 C116 31 125 27 135 31 C145 35 148 47 144 57 C153 54 163 59 166 70 C169 81 162 92 153 96 C160 107 158 121 150 129 C141 138 127 138 117 133 C112 146 105 158 100 158Z" fill="#D4006A"/>
+        <path d="M100 38 L100 235" stroke="#D4006A" stroke-width="2" opacity="0.8"/>
+        <path d="M100 140 C90 134 78 137 72 146" stroke="#D4006A" stroke-width="1.5" fill="none"/>
+        <path d="M100 118 C112 112 124 115 130 124" stroke="#D4006A" stroke-width="1.5" fill="none"/>
+        <path d="M100 155 C88 148 74 151 68 161" stroke="#D4006A" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+    <div class="section__inner section__inner--sobre" style="position:relative;z-index:1;">
+      <div class="sobre__foto">
+        <!-- 
+          FOTOGRAFÍA PERSONAL:
+          Reemplazá images/retrato.jpg con tu foto.
+          Ideal: vertical, buena iluminación, fondo neutro.
+        -->
+        <img src="images/retrato.jpg" alt="Paula Gigena" />
+      </div>
+      <div class="sobre__texto">
+        <span class="section__eyebrow">sobre mí</span>
+        <h2 class="section__title">Paula Gigena</h2>
+        <!-- 
+          BIOGRAFÍA:
+          Editá los párrafos a continuación.
+          Podés agregar más párrafos copiando: <p class="body-text">tu texto</p>
+        -->
+        <p class="body-text">
+          Trabajo desde la intersección entre el cuerpo, la memoria y los materiales. Mi práctica artística encuentra su lugar en el fotobordado, en la fotografía intervenida y en los archivos familiares: esos territorios donde el tiempo se vuelve táctil y la imagen deja de ser solo imagen para convertirse en huella, en tejido, en pregunta.
+        </p>
+        <p class="body-text">
+          Soy abogada, y esa formación me enseñó a leer el mundo con atención al detalle, a la norma y a lo que queda fuera de ella. Soy profesora de Artes Visuales y Especialista en Docencia Universitaria: la enseñanza es también un espacio de investigación, de intercambio y de escucha. Actualmente curso la Maestría en Investigación a través de la Práctica Artística, donde esos recorridos —el derecho, el arte, la educación— se encuentran y se interrogan mutuamente.
+        </p>
+        <p class="body-text">
+          <em>Ser Paula</em> es el nombre desde el cual habito mi práctica: no un personaje, sino un lugar de enunciación. Un modo de estar presente en el trabajo.
+        </p>
+        <p class="body-text">
+          Me interesa la lentitud. El tiempo que lleva coser una fotografía. El tiempo que hay entre una imagen y su significado. El tiempo que una familia tarda en decir lo que guarda.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       OBRAS
+       Cada obra puede tener UNA o VARIAS fotos.
+       
+       CÓMO AGREGAR FOTOS A UNA OBRA:
+       Dentro de cada obra hay una lista data-fotos='[...]'
+       Escribí ahí las rutas de todas las fotos de esa obra.
+       
+       ESTRUCTURA DE CARPETAS:
+         images/
+           obra1/
+             foto1.jpg
+             detalle.jpg
+             reverso.png
+           obra2/
+             vista.jpg
+             zoom.jpg
+       
+       PARA AGREGAR UNA OBRA NUEVA:
+       Copiá cualquier bloque obra__item, cambiá los datos
+       y listá las fotos en data-fotos.
+       ============================================ -->
+  <section class="section section--dark" id="obras">
+    <div class="section__inner">
+      <span class="section__eyebrow section__eyebrow--light">obras</span>
+      <h2 class="section__title section__title--light">Galería</h2>
+
+      <div class="obras__grid">
+
+        <!-- OBRA 1
+             Cambiá los textos y las rutas de las fotos.
+             Podés poner todas las fotos que quieras en data-fotos. -->
+        <div class="obra__item"
+             data-titulo="Sin título I"
+             data-datos="Fotobordado · 2023"
+             data-fotos='["images/obra1/foto1.jpg","images/obra1/foto2.jpg","images/obra1/foto3.jpg"]'>
+          <div class="obra__img-wrap">
+            <img src="images/obra1/foto1.jpg" alt="Sin título I" loading="lazy" />
+          </div>
+          <div class="obra__info">
+            <p class="obra__titulo-obra">Sin título I</p>
+            <p class="obra__datos">Fotobordado · 2023</p>
+            <!-- Indicador de cuántas fotos tiene esta obra -->
+            <p class="obra__contador">3 imágenes</p>
+          </div>
+        </div>
+
+        <!-- OBRA 2 -->
+        <div class="obra__item"
+             data-titulo="Archivo íntimo"
+             data-datos="Fotografía intervenida · 2022"
+             data-fotos='["images/obra2/foto1.jpg","images/obra2/foto2.jpg"]'>
+          <div class="obra__img-wrap">
+            <img src="images/obra2/foto1.jpg" alt="Archivo íntimo" loading="lazy" />
+          </div>
+          <div class="obra__info">
+            <p class="obra__titulo-obra">Archivo íntimo</p>
+            <p class="obra__datos">Fotografía intervenida · 2022</p>
+            <p class="obra__contador">2 imágenes</p>
+          </div>
+        </div>
+
+        <!-- OBRA 3 -->
+        <div class="obra__item"
+             data-titulo="Tejido de memoria"
+             data-datos="Fotobordado · 2023"
+             data-fotos='["images/obra3/foto1.jpg","images/obra3/foto2.jpg","images/obra3/foto3.jpg","images/obra3/foto4.jpg"]'>
+          <div class="obra__img-wrap">
+            <img src="images/obra3/foto1.jpg" alt="Tejido de memoria" loading="lazy" />
+          </div>
+          <div class="obra__info">
+            <p class="obra__titulo-obra">Tejido de memoria</p>
+            <p class="obra__datos">Fotobordado · 2023</p>
+            <p class="obra__contador">4 imágenes</p>
+          </div>
+        </div>
+
+        <!-- OBRA 4 -->
+        <div class="obra__item"
+             data-titulo="Herencia"
+             data-datos="Serie fotográfica · 2021"
+             data-fotos='["images/obra4/foto1.jpg","images/obra4/foto2.jpg"]'>
+          <div class="obra__img-wrap">
+            <img src="images/obra4/foto1.jpg" alt="Herencia" loading="lazy" />
+          </div>
+          <div class="obra__info">
+            <p class="obra__titulo-obra">Herencia</p>
+            <p class="obra__datos">Serie fotográfica · 2021</p>
+            <p class="obra__contador">2 imágenes</p>
+          </div>
+        </div>
+
+        <!-- OBRA 5 -->
+        <div class="obra__item"
+             data-titulo="Costura I"
+             data-datos="Fotobordado · 2022"
+             data-fotos='["images/obra5/foto1.jpg","images/obra5/foto2.jpg","images/obra5/foto3.jpg"]'>
+          <div class="obra__img-wrap">
+            <img src="images/obra5/foto1.jpg" alt="Costura I" loading="lazy" />
+          </div>
+          <div class="obra__info">
+            <p class="obra__titulo-obra">Costura I</p>
+            <p class="obra__datos">Fotobordado · 2022</p>
+            <p class="obra__contador">3 imágenes</p>
+          </div>
+        </div>
+
+        <!-- OBRA 6 -->
+        <div class="obra__item"
+             data-titulo="Lo que queda"
+             data-datos="Archivo familiar intervenido · 2024"
+             data-fotos='["images/obra6/foto1.jpg","images/obra6/foto2.jpg"]'>
+          <div class="obra__img-wrap">
+            <img src="images/obra6/foto1.jpg" alt="Lo que queda" loading="lazy" />
+          </div>
+          <div class="obra__info">
+            <p class="obra__titulo-obra">Lo que queda</p>
+            <p class="obra__datos">Archivo familiar intervenido · 2024</p>
+            <p class="obra__contador">2 imágenes</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX para visualización ampliada de obras -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">&#215;</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">&#8592;</button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Siguiente">&#8594;</button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightboxImg" />
+      <div class="lightbox__caption">
+        <p id="lightboxTitulo"></p>
+        <p id="lightboxDatos"></p>
+        <!-- Contador de fotos: "2 / 4" -->
+        <p class="lightbox__contador" id="lightboxContador"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Separador con peonías -->
+  <div class="peonia-separador" aria-hidden="true">
+    <svg class="peonia-anim-4" width="44" height="68" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#2D5A4F" opacity="0.6"/>
+      <path d="M100 38 L100 235" stroke="#2D5A4F" stroke-width="1.5" opacity="0.4"/>
+      <path d="M100 140 C90 134 80 137 74 144" stroke="#2D5A4F" stroke-width="1" fill="none" opacity="0.4"/>
+    </svg>
+    <svg class="peonia-anim-2" width="62" height="86" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 158 C81 144 57 137 47 119 C37 101 44 79 57 67 C64 61 74 59 81 62 C76 55 77 43 84 37 C92 30 104 32 110 39 C116 31 125 27 135 31 C145 35 148 47 144 57 C153 54 163 59 166 70 C169 81 162 92 153 96 C160 107 158 121 150 129 C141 138 127 138 117 133 C112 146 105 158 100 158Z" fill="#D4006A" opacity="0.75"/>
+      <path d="M100 38 L100 235" stroke="#2D5A4F" stroke-width="1.5" opacity="0.4"/>
+      <path d="M100 140 C90 134 80 137 74 144" stroke="#2D5A4F" stroke-width="1" fill="none" opacity="0.4"/>
+      <path d="M100 122 C110 116 122 119 128 127" stroke="#2D5A4F" stroke-width="1" fill="none" opacity="0.4"/>
+    </svg>
+    <svg class="peonia-anim-5" width="44" height="68" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#B8922A" opacity="0.6"/>
+      <path d="M100 38 L100 235" stroke="#2D5A4F" stroke-width="1.5" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <!-- ============================================
+       PROYECTOS
+       Para agregar proyectos: copiá un bloque completo
+       <article class="proyecto"> y modificá su contenido.
+       ============================================ -->
+  <section class="section" id="proyectos">
+    <div class="section__inner">
+      <span class="section__eyebrow">proyectos</span>
+      <h2 class="section__title">Series y proyectos</h2>
+
+      <!-- PROYECTO 1 -->
+      <article class="proyecto">
+        <div class="proyecto__header">
+          <!-- 
+            TÍTULO DEL PROYECTO: cambiá el texto de h3
+          -->
+          <h3 class="proyecto__nombre">Nombre del proyecto I</h3>
+          <!-- 
+            AÑO Y TÉCNICA
+          -->
+          <p class="proyecto__meta">2023 · Fotobordado y fotografía intervenida</p>
+        </div>
+        <div class="proyecto__body">
+          <!-- 
+            TEXTO CURATORIAL: editá este párrafo
+          -->
+          <p class="proyecto__descripcion">
+            Una breve descripción o texto curatorial del proyecto. Podés escribir sobre el concepto, el proceso, los materiales, el contexto en que fue producido. Este espacio es para contar la obra desde adentro.
+          </p>
+          <!-- 
+            IMÁGENES DEL PROYECTO: reemplazá src con tus imágenes.
+            Podés agregar o eliminar <div class="proyecto__img-wrap"> según necesites.
+          -->
+          <div class="proyecto__imagenes">
+            <div class="proyecto__img-wrap">
+              <img src="images/proyecto1a.jpg" alt="Proyecto I — imagen 1" loading="lazy" />
+            </div>
+            <div class="proyecto__img-wrap">
+              <img src="images/proyecto1b.jpg" alt="Proyecto I — imagen 2" loading="lazy" />
+            </div>
+            <div class="proyecto__img-wrap">
+              <img src="images/proyecto1c.jpg" alt="Proyecto I — imagen 3" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="section__divider"></div>
+
+      <!-- PROYECTO 2 -->
+      <article class="proyecto">
+        <div class="proyecto__header">
+          <h3 class="proyecto__nombre">Nombre del proyecto II</h3>
+          <p class="proyecto__meta">2022 · Serie fotográfica</p>
+        </div>
+        <div class="proyecto__body">
+          <p class="proyecto__descripcion">
+            Texto curatorial del segundo proyecto. Este espacio puede contener reflexiones sobre la práctica, citas de texto, notas de proceso o cualquier escritura vinculada a la obra.
+          </p>
+          <div class="proyecto__imagenes">
+            <div class="proyecto__img-wrap">
+              <img src="images/proyecto2a.jpg" alt="Proyecto II — imagen 1" loading="lazy" />
+            </div>
+            <div class="proyecto__img-wrap">
+              <img src="images/proyecto2b.jpg" alt="Proyecto II — imagen 2" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!--
+        PARA AGREGAR MÁS PROYECTOS:
+        Copiá desde "<!-- PROYECTO 1 -->" hasta su </article>
+        y pegalo después del último <div class="section__divider">.
+        Cambiá todos los textos e imágenes.
+      -->
+
+    </div>
+  </section>
+
+  <!-- Separador con peonías -->
+  <div class="peonia-separador" aria-hidden="true" style="background-color: var(--color-cream);">
+    <svg class="peonia-anim-6" width="38" height="60" viewBox="0 0 200 240" fill="none">
+      <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#B8922A" opacity="0.55"/>
+      <path d="M100 38 L100 235" stroke="#2D5A4F" stroke-width="1.5" opacity="0.4"/>
+    </svg>
+    <svg class="peonia-anim-1" width="58" height="82" viewBox="0 0 200 240" fill="none">
+      <path d="M100 158 C81 144 57 137 47 119 C37 101 44 79 57 67 C64 61 74 59 81 62 C76 55 77 43 84 37 C92 30 104 32 110 39 C116 31 125 27 135 31 C145 35 148 47 144 57 C153 54 163 59 166 70 C169 81 162 92 153 96 C160 107 158 121 150 129 C141 138 127 138 117 133 C112 146 105 158 100 158Z" fill="#D4006A" opacity="0.7"/>
+      <path d="M100 38 L100 235" stroke="#2D5A4F" stroke-width="1.5" opacity="0.4"/>
+      <path d="M100 140 C90 134 80 137 74 144" stroke="#2D5A4F" stroke-width="1" fill="none" opacity="0.4"/>
+      <path d="M100 122 C110 116 122 119 128 127" stroke="#2D5A4F" stroke-width="1" fill="none" opacity="0.4"/>
+    </svg>
+    <svg class="peonia-anim-3" width="38" height="60" viewBox="0 0 200 240" fill="none">
+      <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#2D5A4F" opacity="0.55"/>
+      <path d="M100 38 L100 235" stroke="#2D5A4F" stroke-width="1.5" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <!-- ============================================
+       TEXTOS E INVESTIGACIÓN
+       Para agregar textos: copiá un bloque <article class="texto__item">
+       ============================================ -->
+  <section class="section section--cream" id="textos">
+    <div class="section__inner">
+      <span class="section__eyebrow">textos e investigación</span>
+      <h2 class="section__title">Escrituras</h2>
+
+      <div class="textos__lista">
+
+        <!-- TEXTO 1 -->
+        <article class="texto__item">
+          <div class="texto__meta">
+            <!-- AÑO -->
+            <span class="texto__año">2024</span>
+          </div>
+          <div class="texto__contenido">
+            <!-- TÍTULO DEL TEXTO -->
+            <h3 class="texto__titulo">Sobre la puntada: notas sobre el tiempo en el fotobordado</h3>
+            <!-- TIPO DE TEXTO: ensayo, artículo, reflexión, ponencia, etc. -->
+            <p class="texto__tipo">Ensayo</p>
+            <!-- FRAGMENTO O RESUMEN -->
+            <p class="texto__fragmento">
+              Una apertura o primer párrafo del texto. Este espacio puede mostrar un fragmento breve que invite a la lectura. Podés escribir aquí el comienzo del ensayo o una descripción del contenido.
+            </p>
+            <!-- BOTÓN PARA EXPANDIR O LINK A PDF -->
+            <button class="texto__toggle" aria-expanded="false">leer más</button>
+            <div class="texto__completo" hidden>
+              <p>
+                Aquí va el texto completo del ensayo o artículo. Podés pegar todo el contenido, con todos sus párrafos. El diseño respetará el ritmo editorial de la escritura.
+              </p>
+              <p>
+                Podés agregar tantos párrafos como necesites copiando esta etiqueta &lt;p&gt; con su contenido.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- TEXTO 2 -->
+        <article class="texto__item">
+          <div class="texto__meta">
+            <span class="texto__año">2023</span>
+          </div>
+          <div class="texto__contenido">
+            <h3 class="texto__titulo">Archivo familiar como práctica artística: una aproximación metodológica</h3>
+            <p class="texto__tipo">Ponencia</p>
+            <p class="texto__fragmento">
+              Fragmento o resumen del segundo texto. Una o dos oraciones que contextualicen el contenido y motiven la lectura.
+            </p>
+            <button class="texto__toggle" aria-expanded="false">leer más</button>
+            <div class="texto__completo" hidden>
+              <p>Texto completo de la ponencia.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- TEXTO 3 -->
+        <article class="texto__item">
+          <div class="texto__meta">
+            <span class="texto__año">2022</span>
+          </div>
+          <div class="texto__contenido">
+            <h3 class="texto__titulo">La fotografía como umbral: imagen, cuerpo y materialidad</h3>
+            <p class="texto__tipo">Reflexión</p>
+            <p class="texto__fragmento">
+              Breve fragmento o descripción del tercer texto.
+            </p>
+            <button class="texto__toggle" aria-expanded="false">leer más</button>
+            <div class="texto__completo" hidden>
+              <p>Texto completo aquí.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CURRICULUM VITAE
+       Editá cada subsección con tu información real.
+       ============================================ -->
+  <section class="section" id="cv">
+    <div class="section__inner">
+      <span class="section__eyebrow">curriculum vitae</span>
+      <h2 class="section__title">Paula Gigena</h2>
+
+      <div class="cv__columnas">
+        <div class="cv__col">
+
+          <!-- FORMACIÓN -->
+          <div class="cv__bloque">
+            <h3 class="cv__subtitulo">Formación académica</h3>
+            <ul class="cv__lista">
+              <!-- Copiá <li class="cv__item"> para agregar más -->
+              <li class="cv__item">
+                <span class="cv__año">En curso</span>
+                <span class="cv__desc">Maestría en Investigación a través de la Práctica Artística — [Institución]</span>
+              </li>
+              <li class="cv__item">
+                <span class="cv__año">20XX</span>
+                <span class="cv__desc">Especialización en Docencia Universitaria — [Institución]</span>
+              </li>
+              <li class="cv__item">
+                <span class="cv__año">20XX</span>
+                <span class="cv__desc">Profesorado en Artes Visuales — [Institución]</span>
+              </li>
+              <li class="cv__item">
+                <span class="cv__año">20XX</span>
+                <span class="cv__desc">Abogacía — [Institución]</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- EXPOSICIONES -->
+          <div class="cv__bloque">
+            <h3 class="cv__subtitulo">Exposiciones</h3>
+            <ul class="cv__lista">
+              <li class="cv__item">
+                <span class="cv__año">2024</span>
+                <span class="cv__desc"><em>Título de la muestra.</em> Individual / Colectiva. Espacio, Ciudad.</span>
+              </li>
+              <li class="cv__item">
+                <span class="cv__año">2023</span>
+                <span class="cv__desc"><em>Título de la muestra.</em> Individual / Colectiva. Espacio, Ciudad.</span>
+              </li>
+              <li class="cv__item">
+                <span class="cv__año">2022</span>
+                <span class="cv__desc"><em>Título de la muestra.</em> Individual / Colectiva. Espacio, Ciudad.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- BECAS Y PREMIOS -->
+          <div class="cv__bloque">
+            <h3 class="cv__subtitulo">Becas y premios</h3>
+            <ul class="cv__lista">
+              <li class="cv__item">
+                <span class="cv__año">20XX</span>
+                <span class="cv__desc">Nombre de la beca o premio. Institución otorgante.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="cv__col">
+
+          <!-- PARTICIPACIONES -->
+          <div class="cv__bloque">
+            <h3 class="cv__subtitulo">Participaciones y residencias</h3>
+            <ul class="cv__lista">
+              <li class="cv__item">
+                <span class="cv__año">20XX</span>
+                <span class="cv__desc">Descripción de la participación o residencia artística.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- PUBLICACIONES -->
+          <div class="cv__bloque">
+            <h3 class="cv__subtitulo">Publicaciones</h3>
+            <ul class="cv__lista">
+              <li class="cv__item">
+                <span class="cv__año">20XX</span>
+                <span class="cv__desc">«Título del artículo o ensayo». Publicación / Catálogo. Año.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- DOCENCIA -->
+          <div class="cv__bloque">
+            <h3 class="cv__subtitulo">Actividad docente</h3>
+            <ul class="cv__lista">
+              <li class="cv__item">
+                <span class="cv__año">20XX–</span>
+                <span class="cv__desc">Cargo y materia. Institución educativa.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACTO
+       Editá el email y el usuario de Instagram
+       ============================================ -->
+  <section class="section section--cream" id="contacto">
+    <div class="section__inner section__inner--contacto">
+      <span class="section__eyebrow">contacto</span>
+      <h2 class="section__title">Escribime</h2>
+
+      <div class="contacto__grid">
+
+        <div class="contacto__info">
+          <p class="body-text">Para consultas sobre obra, exposiciones, colaboraciones o cualquier otro mensaje.</p>
+
+          <!-- 
+            LINKS DE CONTACTO:
+            Reemplazá tumail@ejemplo.com con tu email real.
+            Reemplazá @serpaulaa con tu usuario de Instagram.
+          -->
+          <div class="contacto__links">
+            <a href="mailto:tumail@ejemplo.com" class="contacto__link">
+              <span class="contacto__label">correo</span>
+              <span class="contacto__valor">tumail@ejemplo.com</span>
+            </a>
+            <a href="https://instagram.com/serpaulaa" target="_blank" rel="noopener" class="contacto__link">
+              <span class="contacto__label">instagram</span>
+              <span class="contacto__valor">@serpaulaa</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <form class="contacto__form" id="contactForm" novalidate>
+          <!-- 
+            NOTA: Este formulario necesita un servicio para enviar emails.
+            Podés usar Formspree (gratis): 
+            1. Creá una cuenta en formspree.io
+            2. Crea un nuevo formulario
+            3. Reemplazá "action" con tu URL de Formspree:
+               <form action="https://formspree.io/f/XXXXXXXX" method="POST">
+          -->
+          <div class="form__grupo">
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+          </div>
+          <div class="form__grupo">
+            <label for="email">correo electrónico</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form__grupo">
+            <label for="mensaje">mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">enviar</button>
+          <p class="form__mensaje" id="formMensaje" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PIE DE PÁGINA
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <!-- Peonías decorativas en el footer -->
+      <div class="footer__peonias" aria-hidden="true">
+        <svg class="peonia-anim-3" width="32" height="52" viewBox="0 0 200 240" fill="none">
+          <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#F2C4DA"/>
+          <path d="M100 38 L100 235" stroke="#F2C4DA" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+        <svg class="peonia-anim-1" width="44" height="66" viewBox="0 0 200 240" fill="none">
+          <path d="M100 158 C81 144 57 137 47 119 C37 101 44 79 57 67 C64 61 74 59 81 62 C76 55 77 43 84 37 C92 30 104 32 110 39 C116 31 125 27 135 31 C145 35 148 47 144 57 C153 54 163 59 166 70 C169 81 162 92 153 96 C160 107 158 121 150 129 C141 138 127 138 117 133 C112 146 105 158 100 158Z" fill="#D4006A"/>
+          <path d="M100 38 L100 235" stroke="#F2C4DA" stroke-width="1.5" opacity="0.5"/>
+          <path d="M100 140 C90 134 80 137 74 144" stroke="#F2C4DA" stroke-width="1" fill="none" opacity="0.5"/>
+          <path d="M100 122 C110 116 122 119 128 127" stroke="#F2C4DA" stroke-width="1" fill="none" opacity="0.5"/>
+        </svg>
+        <svg class="peonia-anim-6" width="32" height="52" viewBox="0 0 200 240" fill="none">
+          <path d="M100 155 C82 142 60 136 50 118 C40 100 47 78 60 67 C67 61 77 59 84 62 C79 55 80 43 87 37 C95 30 107 32 113 39 C118 31 128 27 137 31 C147 35 150 47 146 57 C155 54 165 59 168 70 C171 81 164 92 155 96 C161 107 159 121 151 129 C142 138 128 138 118 133 C113 146 106 155 100 155Z" fill="#F2C4DA"/>
+          <path d="M100 38 L100 235" stroke="#F2C4DA" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+      </div>
+      <p class="footer__nombre">Paula Gigena</p>
+      <img src="images/logo-ser-paula.png" alt="Ser Paula" class="footer__logo" />
+      <!-- Actualizá el año si es necesario -->
+      <p class="footer__copy">© <span id="footerYear"></span> — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
